@@ -957,3 +957,14 @@ Base URL:
     ]
 }
 ```
+## Storage
+
+### Show photo
+- Endpoint
+  - /photo/:name
+- Method
+  - GET
+- Request Params
+  - name = string
+- Response
+  - photo
