@@ -46,6 +46,46 @@
   ]
 }
 ```
+### Show profile consumer
+- Endpoint
+  - /consumer/profile/:idConsumer
+- Method
+  - GET
+- Request Params
+  - id_consumer = int
+- Response
+```json
+{
+    "banyak": 1,
+    "data": [
+        {
+            "name": "tsubasa",
+            "phone_number": "011137485912",
+            "address": "jepang",
+            "photo_url": null
+        }
+    ]
+}
+```
+
+### Edit profile consumer 
+- Endpoint
+  - /consumer/profile/edit/:idConsumer
+- Method
+  - POST
+- Request Params
+  - id_consumer = int
+- Request Body
+  - name = string
+  - phone_number = int
+  - address = string
+  - photo_url = string
+- Response
+```json
+{
+    "message": "Edit Success"
+}
+```
 
 ### Get all fish consumer
 
