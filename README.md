@@ -998,6 +998,21 @@ Base URL:
 }
 ```
 ## Storage
+### Upload photo
+- Endpoint
+  - /upload/photo
+- Method
+  - POST
+- Request Body
+  - file = files
+- Response
+
+```json
+{
+    "message": "Upload gambar berhasil: kakap.jpg",
+    "url": "https://storage.googleapis.com/photo-prod/kakap.jpg"
+}
+```
 
 ### Show photo
 - Endpoint
