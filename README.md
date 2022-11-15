@@ -72,7 +72,7 @@
 - Endpoint
   - /consumer/profile/edit/:idConsumer
 - Method
-  - POST
+  - PUT
 - Request Params
   - id_consumer = int
 - Request Body
