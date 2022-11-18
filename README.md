@@ -59,10 +59,11 @@
     "banyak": 1,
     "data": [
         {
-            "name": "tsubasa",
-            "phone_number": "011137485912",
-            "address": "jepang",
-            "photo_url": null
+            "name": "narutosh",
+            "email": "adisti@gmail.com",
+            "phone_number": "089645445",
+            "address": "jkt",
+            "photo_url": "blabla.jpg"
         }
     ]
 }
@@ -914,6 +915,54 @@
 }
 ```
 
+### Input transaksi data
+
+- Endpoint
+  - /payment/transaksi/input
+- Method
+  - POST
+- Request Body
+  - externalID: string;
+  - id_consumer: int;
+  - id_ordering: int;
+  - created: date (format(YYYY-MM-DD hh:mm:ss))
+  - paid_at: date (format(YYYY-MM-DD hh:mm:ss))
+  - status: enum (pending, paid, settled, expired);
+- Response
+
+```json
+{
+    "message": "Input Success"
+}
+```
+
+### Get data transaksi by id consumer
+
+- Endpoint
+  - /consumer/payment/transaksi/:id_consumer
+- Method
+  - GET
+- Request Params
+  - id_consumer = string
+- Response
+```json
+{
+    "banyak": 1,
+    "data": [
+        {
+            "id": 3,
+            "id_external": "12321",
+            "id_consumer": 3,
+            "dates_transaction": "2008-11-11T05:23:44.000Z",
+            "dates_payed": "2008-11-11T07:23:44.000Z",
+            "id_ordering": 2,
+            "status": "paid"
+        }
+    ]
+}
+```
+
+
 ## Machine Learning Detection
 
 ### Ikan Kembung
@@ -1023,3 +1072,5 @@ Base URL:
   - name = string
 - Response
   - photo
+  
+  
