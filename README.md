@@ -746,6 +746,8 @@
   - kurir = string
   - alamat = string
   - invoice_url = string
+  - latitude = string
+  - longitude = string
 
 - Response
 
